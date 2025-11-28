@@ -240,14 +240,6 @@ const HomePage = () => {
     <div className="min-h-screen bg-white">
       <Navbar />
       
-      {/* Announcement Bar */}
-      <div className="bg-gradient-to-r from-yellow-600 via-yellow-500 to-yellow-600 text-white py-3 text-center text-sm font-semibold animate-slideDown">
-        <div className="flex items-center justify-center gap-2">
-          <i className="ri-fire-line text-lg"></i>
-          <span>¡Oferta Especial! Envío gratis en pedidos superiores a 30€</span>
-          <i className="ri-fire-line text-lg"></i>
-        </div>
-      </div>
 
       {/* Hero Section */}
       <section className="relative bg-gradient-to-br from-green-50 via-yellow-50 to-green-50 overflow-hidden">
@@ -273,7 +265,7 @@ const HomePage = () => {
                   <span className="block gradient-text">Apicula</span>
                 </h1>
                 <p className="text-xl lg:text-2xl text-gray-700 leading-relaxed font-light">
-                  Apoya nuestras actividades comprando productos oficiales y participando en nuestras campañas solidarias
+                  Apoya nuestras actividades comprando productos oficiales y participando y colaborando en nuestras actividades
                 </p>
               </div>
               <div className="flex flex-wrap gap-4">
@@ -318,18 +310,6 @@ const HomePage = () => {
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent rounded-3xl"></div>
               </div>
-              
-              {/* Floating badge */}
-              <div className="absolute -bottom-6 -left-6 bg-white rounded-2xl shadow-2xl p-6 max-w-xs hover-lift">
-                <div className="flex items-center gap-4">
-                  <div className="w-14 h-14 bg-gradient-to-br from-yellow-400 to-yellow-600 rounded-full flex items-center justify-center">
-                    <i className="ri-star-fill text-3xl text-white"></i>
-                  </div>
-                  <div>
-                    <p className="text-2xl font-bold text-gray-900">4.9/5</p>
-                    <p className="text-sm text-gray-600">Valoración media</p>
-                  </div>
-                </div>
               </div>
             </div>
           </div>
@@ -355,38 +335,6 @@ const HomePage = () => {
         </div>
       </section>
 
-      {/* Flash Sale Countdown */}
-      <section className="py-16 bg-gradient-to-r from-red-500 via-red-600 to-red-500 text-white">
-        <div className="max-w-7xl mx-auto px-6">
-          <div className="text-center mb-8">
-            <h2 className="text-4xl font-bold mb-2">⚡ Oferta Flash ⚡</h2>
-            <p className="text-xl opacity-90">¡Aprovecha antes de que termine!</p>
-          </div>
-          <div className="flex justify-center gap-4 mb-8">
-            {[
-              { value: timeLeft.days, label: 'Días' },
-              { value: timeLeft.hours, label: 'Horas' },
-              { value: timeLeft.minutes, label: 'Min' },
-              { value: timeLeft.seconds, label: 'Seg' }
-            ].map((item, index) => (
-              <div key={index} className="bg-white/20 backdrop-blur-sm rounded-xl p-4 min-w-[80px] text-center">
-                <div className="text-3xl font-bold">{String(item.value).padStart(2, '0')}</div>
-                <div className="text-sm opacity-80">{item.label}</div>
-              </div>
-            ))}
-          </div>
-          <div className="text-center">
-            <Link 
-              to="/categoria/polvorones"
-              className="inline-flex items-center gap-2 bg-white text-red-600 font-bold px-8 py-4 rounded-full hover:bg-gray-100 transition-all duration-300 hover:scale-105 shadow-lg cursor-pointer"
-            >
-              <span>Ver Ofertas</span>
-              <i className="ri-arrow-right-line text-xl"></i>
-            </Link>
-          </div>
-        </div>
-      </section>
-
       {/* Featured Products */}
       <section className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-6">
@@ -398,7 +346,7 @@ const HomePage = () => {
               Productos Destacados
             </h2>
             <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-              Descubre nuestra selección de productos más vendidos
+              Descubre nuestros productos
             </p>
           </div>
 
@@ -574,16 +522,15 @@ const HomePage = () => {
                 Quiénes Somos
               </h2>
               <p className="text-lg text-gray-700 leading-relaxed" style={{ fontFamily: 'Open Sans, sans-serif' }}>
-                El Grupo Scout Apicula es una comunidad dedicada a la formación integral de jóvenes a través de valores como la solidaridad, el respeto y el trabajo en equipo. Desde hace más de 20 años, desarrollamos actividades educativas y proyectos comunitarios que transforman vidas.
-              </p>
-              <p className="text-lg text-gray-700 leading-relaxed">
-                Nuestra tienda oficial nace con el propósito de financiar nuestras actividades y campamentos, ofreciendo productos de calidad que representan nuestros valores scout.
+               El Grupo Scout Apícula es miembro de la Asociación de Scouts de Guadalajara compuesta por otros 4 grupos más: Alveus, Cárcavas, Nadino y Ocejón.
+
+               Llevamos 50 años trabajando según los valores del escultismo, y nuestra finalidad es contribuir a la educación de nuestros niños y jóvenes, a través de los principios, valores y metodología del Movimiento Scout Católico en el que nos integramos.
               </p>
             </div>
             <div className="relative w-full h-96">
               <div className="w-full h-full rounded-full overflow-hidden border-4 border-yellow-600 shadow-2xl">
                 <img 
-                  src="https://readdy.ai/api/search-image?query=diverse%20group%20of%20scouts%20in%20circle%20formation%20wearing%20green%20uniforms%20doing%20team%20building%20activity%20outdoors%20with%20simple%20clean%20warm%20natural%20background%20positive%20atmosphere%20unity%20and%20friendship&width=600&height=600&seq=10&orientation=squarish"
+                  src="images/apiculalogo"
                   alt="Grupo Scout"
                   className="w-full h-full object-cover object-top"
                 />

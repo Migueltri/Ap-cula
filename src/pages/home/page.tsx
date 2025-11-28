@@ -519,10 +519,13 @@ const HomePage = () => {
             </div>
           </div>
             ))}
+                 </div>
         </div>
       </section>
 
-          {/* Trust Badges */}
+      {/* Trust Badges */}
+      <section className="py-16">
+        <div className="max-w-7xl mx-auto px-6">
           <div className="mt-16 flex flex-wrap justify-center items-center gap-8">
             <div className="flex items-center gap-3 text-gray-600">
               <i className="ri-shield-check-fill text-3xl text-green-600"></i>

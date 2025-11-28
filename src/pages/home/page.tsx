@@ -300,36 +300,19 @@ const HomePage = () => {
               </div>
             </div>
 
-            {/* Right Image */}
-            <div className={`relative w-full h-96 lg:h-[600px] ${isVisible ? 'animate-slideUp' : 'opacity-0'}`} style={{ animationDelay: '0.2s' }}>
-              <div className="relative w-full h-full">
-                <img 
-                  src="https://readdy.ai/api/search-image?query=happy%20diverse%20group%20of%20young%20scouts%20in%20green%20uniforms%20doing%20outdoor%20activities%20camping%20and%20teamwork%20in%20nature%20with%20simple%20clean%20warm%20natural%20background%20positive%20atmosphere%20sunny%20day%20community%20spirit&width=600&height=700&seq=9&orientation=portrait"
-                  alt="Grupo Scout Apicula"
-                  className="w-full h-full object-cover object-top rounded-3xl shadow-2xl"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent rounded-3xl"></div>
-              </div>
-              </div>
+            {/* Right box (image removed) */}
+            <div className="relative w-full h-96 lg:h-[600px] bg-gray-100 rounded-3xl shadow-2xl flex items-center justify-center">
+              <p className="text-gray-600">Imagen eliminada</p>
             </div>
+
+          </div>
+        </div>
       </section>
 
       {/* Benefits Bar */}
       <section className="py-12 bg-white border-y border-gray-100">
         <div className="max-w-7xl mx-auto px-6">
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-            {benefits.map((benefit, index) => (
-              <div key={index} className="flex items-center gap-4 group cursor-pointer">
-                <div className="w-14 h-14 bg-green-100 rounded-full flex items-center justify-center group-hover:bg-yellow-500 transition-all duration-300 flex-shrink-0">
-                  <i className={`${benefit.icon} text-2xl text-green-700 group-hover:text-white transition-colors`}></i>
-                </div>
-                <div>
-                  <h3 className="font-bold text-gray-900 mb-1">{benefit.title}</h3>
-                  <p className="text-sm text-gray-600">{benefit.description}</p>
-                </div>
-              </div>
-            ))}
-          </div>
+          <p className="text-center text-gray-600">Beneficios eliminados temporalmente (sin imágenes)</p>
         </div>
       </section>
 
@@ -738,6 +721,7 @@ const HomePage = () => {
 
       <AuthModal isOpen={isAuthModalOpen} onClose={() => setIsAuthModalOpen(false)} />
 
+  {/* Footer */}
       <Footer />
     </div>
   );

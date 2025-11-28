@@ -518,33 +518,6 @@ const HomePage = () => {
               </div>
             </div>
           </div>
-
-          <div className="grid lg:grid-cols-2 gap-16 items-center">
-            <div className="order-2 lg:order-1 relative w-full h-96">
-              <img 
-                src="https://readdy.ai/api/search-image?query=scouts%20doing%20outdoor%20activities%20hiking%20camping%20and%20learning%20survival%20skills%20in%20nature%20with%20simple%20clean%20warm%20natural%20background%20educational%20atmosphere%20adventure%20and%20growth&width=700&height=500&seq=11&orientation=landscape"
-                alt="Actividades Scout"
-                className="w-full h-full object-cover object-top rounded-2xl shadow-2xl"
-              />
-            </div>
-            <div className="order-1 lg:order-2 space-y-6">
-              <h3 className="text-3xl font-bold text-green-900" style={{ fontFamily: 'Montserrat, sans-serif' }}>
-                Nuestra Misión
-              </h3>
-              <p className="text-lg text-gray-700 leading-relaxed">
-                Formar ciudadanos comprometidos con su comunidad, capaces de liderar con valores y contribuir positivamente a la sociedad.
-              </p>
-              <ul className="space-y-4">
-                {['Educación en valores', 'Desarrollo de habilidades', 'Servicio comunitario', 'Respeto por la naturaleza'].map((item) => (
-                  <li key={item} className="flex items-center gap-3">
-                    <div className="w-6 h-6 bg-green-100 rounded-full flex items-center justify-center flex-shrink-0">
-                      <i className="ri-check-line text-green-700"></i>
-                    </div>
-                    <span className="text-gray-700 font-medium">{item}</span>
-                  </li>
-                ))}
-              </ul>
-            </div>
           </div>
 
           <div className="grid md:grid-cols-3 gap-8 mt-20">

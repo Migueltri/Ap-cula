@@ -494,38 +494,53 @@ const HomePage = () => {
         </div>
       </section>
 
-      {/* About Section */}
-      <section className="py-20 bg-white">
+            {/* Testimonials Section */}
+      <section className="py-20 bg-gradient-to-b from-white to-gray-50">
         <div className="max-w-7xl mx-auto px-6">
-          <div className="grid lg:grid-cols-2 gap-16 items-center mb-16">
-            <div className="space-y-6">
-              <h2 className="text-4xl font-bold text-green-900" style={{ fontFamily: 'Montserrat, sans-serif' }}>
-                Quiénes Somos
-              </h2>
-              <p className="text-lg text-gray-700 leading-relaxed" style={{ fontFamily: 'Open Sans, sans-serif' }}>
-               El Grupo Scout Apícula es miembro de la Asociación de Scouts de Guadalajara compuesta por otros 4 grupos más: Alveus, Cárcavas, Nadino y Ocejón.
-
-               Llevamos 50 años trabajando según los valores del escultismo, y nuestra finalidad es contribuir a la educación de nuestros niños y jóvenes, a través de los principios, valores y metodología del Movimiento Scout Católico en el que nos integramos.
-              </p>
-            </div>
-            <div className="relative w-full h-96">
-              <div className="w-full h-full rounded-full overflow-hidden border-4 border-yellow-600 shadow-2xl">
-                <img 
-                  src="images/apiculalogo"
-                  alt="Grupo Scout"
-                  className="w-full h-full object-cover object-top"
-                />
-              </div>
-            </div>
+          <div className="text-center mb-16">
+            <span className="inline-block px-4 py-2 bg-yellow-100 text-yellow-800 rounded-full text-sm font-semibold mb-4">
+              Opiniones Reales
+            </span>
+            <h2 className="text-4xl lg:text-5xl font-bold text-green-900 mb-4">
+              Lo Que Dicen Nuestros Clientes
+            </h2>
+            <p className="text-lg text-gray-600 max-w-2xl mx-auto">
+              Miles de familias confían en nosotros
+            </p>
           </div>
-            ))}
-                 </div>
-        </div>
-      </section>
 
-      {/* Trust Badges */}
-      <section className="py-16">
-        <div className="max-w-7xl mx-auto px-6">
+          <div className="grid md:grid-cols-3 gap-8">
+            {testimonials.map((testimonial, index) => (
+              <div 
+                key={index}
+                className="bg-white p-8 rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2"
+              >
+                <div className="flex items-center gap-1 mb-4">
+                  {[...Array(testimonial.rating)].map((_, i) => (
+                    <i key={i} className="ri-star-fill text-yellow-500 text-xl"></i>
+                  ))}
+                </div>
+                <p className="text-gray-700 mb-6 leading-relaxed italic">
+                  "{testimonial.comment}"
+                </p>
+                <div className="flex items-center gap-4">
+                  <div className="w-12 h-12 rounded-full overflow-hidden bg-gray-200">
+                    <img 
+                      src={testimonial.avatar}
+                      alt={testimonial.name}
+                      className="w-full h-full object-cover"
+                    />
+                  </div>
+                  <div>
+                    <p className="font-bold text-gray-900">{testimonial.name}</p>
+                    <p className="text-sm text-gray-500">Cliente Verificado</p>
+                  </div>
+                </div>
+              </div>
+            ))}
+          </div>
+
+          {/* Trust Badges */}
           <div className="mt-16 flex flex-wrap justify-center items-center gap-8">
             <div className="flex items-center gap-3 text-gray-600">
               <i className="ri-shield-check-fill text-3xl text-green-600"></i>
@@ -551,6 +566,7 @@ const HomePage = () => {
           </div>
         </div>
       </section>
+
 
       {/* Newsletter Section */}
       <section className="py-20 bg-gradient-to-r from-green-700 via-green-600 to-green-700 text-white relative overflow-hidden">

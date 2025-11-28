@@ -518,7 +518,6 @@ const HomePage = () => {
               </div>
             </div>
           </div>
-          </div>
 
           <div className="grid md:grid-cols-3 gap-8 mt-20">
             {[

@@ -518,69 +518,10 @@ const HomePage = () => {
               </div>
             </div>
           </div>
-
-          <div className="grid md:grid-cols-3 gap-8 mt-20">
-            {[
-              { number: '20+', label: 'Años de Historia' },
-              { number: '150+', label: 'Miembros Activos' },
-              { number: '50+', label: 'Proyectos Realizados' }
-            ].map((stat) => (
-              <div key={stat.label} className="text-center p-8 bg-green-50 rounded-2xl">
-                <p className="text-5xl font-bold text-yellow-600 mb-2" style={{ fontFamily: 'Montserrat, sans-serif' }}>
-                  {stat.number}
-                </p>
-                <p className="text-gray-700 font-medium">{stat.label}</p>
-              </div>
             ))}
           </div>
         </div>
       </section>
-
-      {/* Testimonials Section */}
-      <section className="py-20 bg-gradient-to-b from-white to-gray-50">
-        <div className="max-w-7xl mx-auto px-6">
-          <div className="text-center mb-16">
-            <span className="inline-block px-4 py-2 bg-yellow-100 text-yellow-800 rounded-full text-sm font-semibold mb-4">
-              Opiniones Reales
-            </span>
-            <h2 className="text-4xl lg:text-5xl font-bold text-green-900 mb-4">
-              Lo Que Dicen Nuestros Clientes
-            </h2>
-            <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-              Miles de familias confían en nosotros
-            </p>
-          </div>
-
-          <div className="grid md:grid-cols-3 gap-8">
-            {testimonials.map((testimonial, index) => (
-              <div 
-                key={index}
-                className="bg-white p-8 rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2"
-              >
-                <div className="flex items-center gap-1 mb-4">
-                  {[...Array(testimonial.rating)].map((_, i) => (
-                    <i key={i} className="ri-star-fill text-yellow-500 text-xl"></i>
-                  ))}
-                </div>
-                <p className="text-gray-700 mb-6 leading-relaxed italic">
-                  "{testimonial.comment}"
-                </p>
-                <div className="flex items-center gap-4">
-                  <div className="w-12 h-12 rounded-full overflow-hidden bg-gray-200">
-                    <img 
-                      src={testimonial.avatar}
-                      alt={testimonial.name}
-                      className="w-full h-full object-cover"
-                    />
-                  </div>
-                  <div>
-                    <p className="font-bold text-gray-900">{testimonial.name}</p>
-                    <p className="text-sm text-gray-500">Cliente Verificado</p>
-                  </div>
-                </div>
-              </div>
-            ))}
-          </div>
 
           {/* Trust Badges */}
           <div className="mt-16 flex flex-wrap justify-center items-center gap-8">

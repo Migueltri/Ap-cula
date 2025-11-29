@@ -35,11 +35,12 @@ const Navbar = () => {
     }
   };
 
+  // SLUGS must exactly match keys in your allProducts object
   const categories = [
     { name: 'Polvorones', slug: 'polvorones', icon: 'ri-cake-3-line' },
     { name: 'Merchandising', slug: 'merchandising', icon: 'ri-shirt-line' },
-    { name: 'Telechurro', slug: 'telechurro', icon: 'ri-compass-3-line' },
-    { name: 'Sábados Temáticos', slug: 'sábados temáticos', icon: 'ri-hand-heart-line' }
+    { name: 'Terechurro', slug: 'terechurro', icon: 'ri-compass-3-line' },
+    { name: 'Trabajos Extra', slug: 'trabajos-extra', icon: 'ri-hand-heart-line' }
   ];
 
   return (
@@ -84,7 +85,7 @@ const Navbar = () => {
               {categories.map((category) => (
                 <Link 
                   key={category.slug}
-                  to={`/categoria/${category.slug}`}
+                  to={`/categoria/${encodeURIComponent(category.slug)}`}
                   className={`font-semibold transition-all duration-300 hover:text-yellow-600 relative group cursor-pointer ${
                     isScrolled ? 'text-gray-700' : 'text-gray-900'
                   }`}
@@ -277,7 +278,7 @@ const Navbar = () => {
               {categories.map((category) => (
                 <Link 
                   key={category.slug}
-                  to={`/categoria/${category.slug}`}
+                  to={`/categoria/${encodeURIComponent(category.slug)}`}
                   onClick={() => setIsMobileMenuOpen(false)}
                   className="block py-3 px-4 text-gray-700 hover:bg-gray-50 rounded-lg font-semibold transition-colors cursor-pointer"
                 >

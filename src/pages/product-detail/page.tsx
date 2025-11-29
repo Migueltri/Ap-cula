@@ -511,8 +511,10 @@ export default function ProductDetailPage() {
 
   useEffect(() => {
     if (category && id) {
-      const categoryProducts = allProducts[category] || [];
-      const foundProduct = categoryProducts.find(p => p.id === parseInt(id));
+      // defensiva: category debe coincidir con una key de allProducts
+      const key = category.toLowerCase();
+      const categoryProducts = allProducts[key] || [];
+      const foundProduct = categoryProducts.find(p => p.id === parseInt(id, 10));
       setProduct(foundProduct || null);
     }
   }, [category, id]);
@@ -528,10 +530,11 @@ export default function ProductDetailPage() {
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
+    if (!product) return;
     setIsSubmitting(true);
 
     const formDataToSend = new URLSearchParams();
-    formDataToSend.append('producto', product?.name || '');
+    formDataToSend.append('producto', product?.name ?? '');
     formDataToSend.append('cantidad', quantity.toString());
     formDataToSend.append('precio_total', ((product?.price || 0) * quantity).toFixed(2));
     formDataToSend.append('nombre', formData.nombre);
@@ -614,8 +617,13 @@ export default function ProductDetailPage() {
         shareUrl = `https://twitter.com/intent/tweet?text=${encodeURIComponent(text)}&url=${encodeURIComponent(url)}`;
         break;
       case 'copy':
-        navigator.clipboard.writeText(url);
-        alert('¡Enlace copiado al portapapeles!');
+        try {
+          navigator.clipboard.writeText(url);
+          alert('¡Enlace copiado al portapapeles!');
+        } catch {
+          // fallback
+          prompt('Copia el enlace manualmente:', url);
+        }
         setShowShareModal(false);
         return;
     }
@@ -626,6 +634,7 @@ export default function ProductDetailPage() {
     }
   };
 
+  // Si no existe producto mostramos error controlado (no crash)
   if (!product) {
     return (
       <div className="min-h-screen bg-gray-50">
@@ -641,13 +650,16 @@ export default function ProductDetailPage() {
     );
   }
 
+  // En render usamos product.image ?? placeholder para evitar imagen rota
+  const imageSrc = product.image ?? '/images/placeholder.png';
+
   return (
     <div className="min-h-screen bg-gray-50">
       <Navbar />
       <ShareModal isOpen={showShareModal} onClose={() => setShowShareModal(false)} product={{
         id: product.id.toString(),
         name: product.name,
-        image: product.image
+        image: imageSrc
       }} />
 
       <div className="container mx-auto px-4 py-12 mt-20">
@@ -669,9 +681,10 @@ export default function ProductDetailPage() {
           <div className="bg-white rounded-2xl shadow-lg overflow-hidden relative">
             <div className="relative w-full h-[600px]">
               <img
-                src={product.image}
+                src={imageSrc}
                 alt={product.name}
                 className="w-full h-full object-cover object-top"
+                onError={(e) => { (e.currentTarget as HTMLImageElement).src = '/images/placeholder.png'; }}
               />
               {product.badge && (
                 <span className={`absolute top-6 right-6 px-4 py-2 rounded-full text-sm font-bold ${
@@ -758,7 +771,6 @@ export default function ProductDetailPage() {
               </div>
             </div>
 
-            {/* Feedback de añadido al carrito */}
             {addedToCart && (
               <div className="bg-green-100 border border-green-400 text-green-700 px-4 py-3 rounded-lg mb-4 flex items-center animate-slideDown">
                 <i className="ri-checkbox-circle-line text-2xl mr-2"></i>

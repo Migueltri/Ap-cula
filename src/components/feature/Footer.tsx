@@ -21,14 +21,12 @@ const Footer = () => {
               <span className="text-xl font-bold">Scout Apicula</span>
             </div>
             <p className="text-green-100 leading-relaxed">
-              Formando jóvenes con valores desde hace más de 20 años. Apoya nuestras actividades comprando en nuestra tienda oficial.
+           Apoya nuestras actividades comprando en nuestra tienda oficial.
             </p>
             <div className="flex gap-3">
               {[
-                { icon: 'ri-facebook-fill', link: '#' },
                 { icon: 'ri-instagram-line', link: '#' },
                 { icon: 'ri-twitter-x-line', link: '#' },
-                { icon: 'ri-youtube-fill', link: '#' }
               ].map((social, index) => (
                 <a 
                   key={index}
@@ -101,19 +99,14 @@ const Footer = () => {
                 </div>
                 <div>
                   <p className="text-sm text-green-100">
-                    Calle Scout, 123<br />
-                    28001 Madrid, España
+                  Calle Rufino Blanco, <br />
+                  12, 19002 Guadalajara (Bajos de la parroquia San Antonio de Padua)
                   </p>
                 </div>
               </li>
               <li className="flex items-start gap-3">
                 <div className="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center flex-shrink-0">
                   <i className="ri-phone-line text-lg"></i>
-                </div>
-                <div>
-                  <p className="text-sm text-green-100">
-                    +34 123 456 789
-                  </p>
                 </div>
               </li>
               <li className="flex items-start gap-3">
@@ -122,7 +115,7 @@ const Footer = () => {
                 </div>
                 <div>
                   <p className="text-sm text-green-100">
-                    info@scoutapicula.com
+                   pionerosapicula@gmail.com
                   </p>
                 </div>
               </li>
@@ -169,14 +162,6 @@ const Footer = () => {
               </a>
               <a href="#" className="hover:text-yellow-400 transition-colors cursor-pointer">
                 Cookies
-              </a>
-              <a 
-                href="https://readdy.ai/?origin=logo" 
-                target="_blank" 
-                rel="noopener noreferrer"
-                className="hover:text-yellow-400 transition-colors cursor-pointer"
-              >
-                Powered by Readdy
               </a>
             </div>
           </div>

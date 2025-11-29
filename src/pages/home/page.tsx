@@ -112,8 +112,8 @@ const HomePage = () => {
       image: 'https://readdy.ai/api/search-image?query=scout%20merchandise%20collection%20with%20tshirts%20caps%20bottles%20and%20accessories%20displayed%20together%20on%20simple%20clean%20white%20background%20product%20photography%20style%20professional%20lighting%20organized%20layout&width=800&height=450&seq=6&orientation=landscape'
     },
     {
-      name: 'Terechurro',
-      slug: 'terechurro',
+      name: 'Telechurro',
+      slug: 'telechurro',
       count: '6 productos',
       icon: 'ri-compass-3-line',
       image: 'https://readdy.ai/api/search-image?query=outdoor%20camping%20and%20adventure%20gear%20equipment%20including%20survival%20tools%20and%20scout%20supplies%20on%20simple%20clean%20white%20background%20product%20photography%20style%20professional%20lighting%20organized%20display&width=800&height=450&seq=7&orientation=landscape'
@@ -124,27 +124,6 @@ const HomePage = () => {
       count: '6 servicios',
       icon: 'ri-hand-heart-line',
       image: 'https://readdy.ai/api/search-image?query=group%20of%20young%20scouts%20in%20green%20uniforms%20doing%20community%20service%20and%20volunteer%20work%20helping%20others%20on%20simple%20clean%20warm%20background%20positive%20atmosphere%20teamwork%20and%20solidarity&width=800&height=450&seq=8&orientation=landscape'
-    }
-  ];
-
-  const testimonials = [
-    {
-      name: 'María González',
-      rating: 5,
-      comment: 'Los polvorones son deliciosos y el servicio excelente. ¡Totalmente recomendado!',
-      avatar: 'https://readdy.ai/api/search-image?query=happy%20woman%20smiling%20portrait%20professional%20headshot%20on%20white%20background&width=100&height=100&seq=test1&orientation=squarish'
-    },
-    {
-      name: 'Carlos Ruiz',
-      rating: 5,
-      comment: 'Compré merchandising para mi hijo scout y la calidad es increíble.',
-      avatar: 'https://readdy.ai/api/search-image?query=happy%20man%20smiling%20portrait%20professional%20headshot%20on%20white%20background&width=100&height=100&seq=test2&orientation=squarish'
-    },
-    {
-      name: 'Ana Martínez',
-      rating: 5,
-      comment: 'Excelente atención y productos de primera calidad. Volveré a comprar.',
-      avatar: 'https://readdy.ai/api/search-image?query=happy%20woman%20smiling%20portrait%20professional%20headshot%20on%20white%20background&width=100&height=100&seq=test3&orientation=squarish'
     }
   ];
 

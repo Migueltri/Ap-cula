@@ -38,8 +38,8 @@ const Navbar = () => {
   const categories = [
     { name: 'Polvorones', slug: 'polvorones', icon: 'ri-cake-3-line' },
     { name: 'Merchandising', slug: 'merchandising', icon: 'ri-shirt-line' },
-    { name: 'Terechurro', slug: 'terechurro', icon: 'ri-compass-3-line' },
-    { name: 'Trabajos Extra', slug: 'trabajos-extra', icon: 'ri-hand-heart-line' }
+    { name: 'Telechurro', slug: 'telechurro', icon: 'ri-compass-3-line' },
+    { name: 'Sábados Temáticos', slug: 'sábados temáticos', icon: 'ri-hand-heart-line' }
   ];
 
   return (
@@ -55,8 +55,8 @@ const Navbar = () => {
             <Link to="/" className="flex items-center gap-3 group cursor-pointer">
               <div className="w-12 h-12 flex items-center justify-center">
                 <img 
-                  src="https://static.readdy.ai/image/5110ce3ba25b092cb363e0b1bb235016/4ccf1a0137efdb42c5618605ca1bf08a.png"
-                  alt="Grupo Scout Apicula"
+                  src="/images/pios.png"
+                  alt="Pioneros Apicula"
                   className="w-full h-full object-contain group-hover:scale-110 transition-transform duration-300"
                 />
               </div>
@@ -64,7 +64,7 @@ const Navbar = () => {
                 <span className={`text-xl font-bold transition-colors ${
                   isScrolled ? 'text-green-900' : 'text-green-900'
                 }`}>
-                  Grupo Scout Apicula
+                  Pioneros Apicula
                 </span>
               </div>
             </Link>

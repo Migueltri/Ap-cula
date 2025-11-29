@@ -283,7 +283,11 @@ const HomePage = () => {
                   <i className="ri-calendar-line text-xl"></i>
                   <span>Ver Calendario</span>
                 </Link>
-              </div>
+               </div>
+            </div>
+            </div>
+        </div>
+      </section>
 
       {/* Featured Products */}
       <section className="py-20 bg-white">

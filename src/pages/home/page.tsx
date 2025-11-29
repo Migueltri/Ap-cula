@@ -261,7 +261,7 @@ const HomePage = () => {
                   </span>
                 </div>
                 <h1 className="text-5xl lg:text-6xl xl:text-7xl font-extrabold text-green-900 leading-tight">
-                  Grupo Scout
+                  Pioneros
                   <span className="block gradient-text">Apicula</span>
                 </h1>
                 <p className="text-xl lg:text-2xl text-gray-700 leading-relaxed font-light">
@@ -284,37 +284,6 @@ const HomePage = () => {
                   <span>Ver Calendario</span>
                 </Link>
               </div>
-              
-              {/* Stats */}
-              <div className="grid grid-cols-3 gap-6 pt-8">
-                {[
-                  { number: '500+', label: 'Productos Vendidos' },
-                  { number: '150+', label: 'Miembros Activos' },
-                  { number: '20+', label: 'Años de Historia' }
-                ].map((stat, index) => (
-                  <div key={index} className="text-center">
-                    <p className="text-3xl lg:text-4xl font-bold text-green-800">{stat.number}</p>
-                    <p className="text-sm text-gray-600 mt-1">{stat.label}</p>
-                  </div>
-                ))}
-              </div>
-            </div>
-
-            {/* Right box (image removed) */}
-            <div className="relative w-full h-96 lg:h-[600px] bg-gray-100 rounded-3xl shadow-2xl flex items-center justify-center">
-              <p className="text-gray-600">Imagen eliminada</p>
-            </div>
-
-          </div>
-        </div>
-      </section>
-
-      {/* Benefits Bar */}
-      <section className="py-12 bg-white border-y border-gray-100">
-        <div className="max-w-7xl mx-auto px-6">
-          <p className="text-center text-gray-600">Beneficios eliminados temporalmente (sin imágenes)</p>
-        </div>
-      </section>
 
       {/* Featured Products */}
       <section className="py-20 bg-white">

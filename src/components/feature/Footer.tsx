@@ -13,7 +13,7 @@ const Footer = () => {
             <div className="flex items-center gap-3">
               <div className="w-12 h-12 flex items-center justify-center">
                 <img 
-                  src="https://static.readdy.ai/image/5110ce3ba25b092cb363e0b1bb235016/4ccf1a0137efdb42c5618605ca1bf08a.png"
+                  src="pios.png"
                   alt="Grupo Scout Apicula"
                   className="w-full h-full object-contain"
                 />

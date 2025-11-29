@@ -106,11 +106,6 @@ const Footer = () => {
               </li>
               <li className="flex items-start gap-3">
                 <div className="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center flex-shrink-0">
-                  <i className="ri-phone-line text-lg"></i>
-                </div>
-              </li>
-              <li className="flex items-start gap-3">
-                <div className="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center flex-shrink-0">
                   <i className="ri-mail-line text-lg"></i>
                 </div>
                 <div>
@@ -154,7 +149,7 @@ const Footer = () => {
         <div className="max-w-7xl mx-auto px-6 py-6">
           <div className="flex flex-col md:flex-row items-center justify-between gap-4 text-sm text-green-200">
             <p>
-              © {currentYear} Grupo Scout Apicula. Todos los derechos reservados.
+              © {currentYear} Pioneros Apicula. Todos los derechos reservados.
             </p>
             <div className="flex items-center gap-6">
               <a href="#" className="hover:text-yellow-400 transition-colors cursor-pointer">

@@ -27,7 +27,7 @@ const CategoryPage = () => {
         id: 1,
         name: 'Pack Clásico 500g',
         price: 8.50,
-        image: 'https://readdy.ai/api/search-image?query=traditional%20spanish%20polvorones%20cookies%20in%20elegant%20white%20box%20with%20golden%20ribbon%20simple%20clean%20white%20background%20product%20photography%20style%20professional%20lighting%20appetizing%20presentation&width=400&height=500&seq=pol1&orientation=portrait',
+        image: '/images/1.png',
         description: 'Polvorones tradicionales de almendra',
         badge: 'Popular',
         category: 'polvorones'
@@ -36,7 +36,7 @@ const CategoryPage = () => {
         id: 2,
         name: 'Pack Surtido 750g',
         price: 12.00,
-        image: 'https://readdy.ai/api/search-image?query=assorted%20spanish%20polvorones%20cookies%20variety%20pack%20in%20decorative%20white%20box%20with%20golden%20details%20simple%20clean%20white%20background%20product%20photography%20professional%20lighting%20delicious%20presentation&width=400&height=500&seq=pol2&orientation=portrait',
+        image: '/images/2.png',
         description: 'Variedad de sabores: almendra, canela y limón',
         badge: 'Nuevo',
         category: 'polvorones'
@@ -45,7 +45,7 @@ const CategoryPage = () => {
         id: 3,
         name: 'Pack Familiar 1kg',
         price: 15.50,
-        image: 'https://readdy.ai/api/search-image?query=large%20family%20size%20spanish%20polvorones%20cookies%20in%20premium%20white%20box%20with%20golden%20accents%20simple%20clean%20white%20background%20product%20photography%20professional%20studio%20lighting&width=400&height=500&seq=pol3&orientation=portrait',
+        image: '/images/3.png',
         description: 'Ideal para compartir en familia',
         badge: 'Oferta',
         category: 'polvorones'
@@ -54,7 +54,7 @@ const CategoryPage = () => {
         id: 4,
         name: 'Pack Mini 250g',
         price: 5.00,
-        image: 'https://readdy.ai/api/search-image?query=small%20mini%20spanish%20polvorones%20cookies%20in%20cute%20white%20box%20with%20golden%20ribbon%20simple%20clean%20white%20background%20product%20photography%20professional%20lighting%20charming%20presentation&width=400&height=500&seq=pol4&orientation=portrait',
+        image: '/images/4.png',
         description: 'Perfecto para probar',
         category: 'polvorones'
       },
@@ -62,7 +62,7 @@ const CategoryPage = () => {
         id: 5,
         name: 'Pack Premium 1.5kg',
         price: 22.00,
-        image: 'https://readdy.ai/api/search-image?query=premium%20luxury%20spanish%20polvorones%20cookies%20in%20elegant%20white%20gift%20box%20with%20golden%20decorations%20simple%20clean%20white%20background%20product%20photography%20professional%20studio%20lighting&width=400&height=500&seq=pol5&orientation=portrait',
+        image: '/images/5.png',
         description: 'Selección premium de almendra',
         badge: 'Premium',
         category: 'polvorones'
@@ -71,7 +71,7 @@ const CategoryPage = () => {
         id: 6,
         name: 'Pack Canela 500g',
         price: 9.00,
-        image: 'https://readdy.ai/api/search-image?query=cinnamon%20spanish%20polvorones%20cookies%20in%20white%20box%20with%20cinnamon%20sticks%20decoration%20simple%20clean%20white%20background%20product%20photography%20professional%20lighting%20aromatic%20presentation&width=400&height=500&seq=pol6&orientation=portrait',
+        image: '/images/6.png',
         description: 'Sabor intenso a canela',
         category: 'polvorones'
       },
@@ -79,7 +79,7 @@ const CategoryPage = () => {
         id: 7,
         name: 'Pack Chocolate 500g',
         price: 9.50,
-        image: 'https://readdy.ai/api/search-image?query=chocolate%20spanish%20polvorones%20cookies%20in%20white%20box%20with%20cocoa%20powder%20decoration%20simple%20clean%20white%20background%20product%20photography%20professional%20lighting%20delicious%20presentation&width=400&height=500&seq=pol7&orientation=portrait',
+        image: '/images/7.png',
         description: 'Con cacao puro',
         badge: 'Nuevo',
         category: 'polvorones'
@@ -88,7 +88,7 @@ const CategoryPage = () => {
         id: 8,
         name: 'Pack Limón 500g',
         price: 8.75,
-        image: 'https://readdy.ai/api/search-image?query=lemon%20spanish%20polvorones%20cookies%20in%20white%20box%20with%20fresh%20lemon%20decoration%20simple%20clean%20white%20background%20product%20photography%20professional%20lighting%20refreshing%20presentation&width=400&height=500&seq=pol8&orientation=portrait',
+        image: '/images/8.png',
         description: 'Toque cítrico refrescante',
         category: 'polvorones'
       }
@@ -98,7 +98,7 @@ const CategoryPage = () => {
         id: 1,
         name: 'Camiseta Scout Verde',
         price: 18.00,
-        image: 'https://readdy.ai/api/search-image?query=green%20scout%20t-shirt%20with%20scout%20emblem%20logo%20on%20white%20background%20product%20photography%20professional%20lighting%20casual%20wear%20cotton%20fabric&width=400&height=500&seq=merc1&orientation=portrait',
+        image: '/images/merchan1.png',
         description: 'Camiseta oficial del grupo',
         badge: 'Popular',
         category: 'merchandising'
@@ -107,7 +107,7 @@ const CategoryPage = () => {
         id: 2,
         name: 'Sudadera con Capucha',
         price: 28.00,
-        image: 'https://readdy.ai/api/search-image?query=green%20scout%20hoodie%20sweatshirt%20with%20embroidered%20logo%20on%20white%20background%20product%20photography%20professional%20lighting%20comfortable%20casual%20wear&width=400&height=500&seq=merc2&orientation=portrait',
+        image: '/images/merchan2.png',
         description: 'Sudadera cálida y cómoda',
         category: 'merchandising'
       },
@@ -115,7 +115,7 @@ const CategoryPage = () => {
         id: 3,
         name: 'Cantimplora Térmica',
         price: 15.00,
-        image: 'https://readdy.ai/api/search-image?query=green%20thermal%20water%20bottle%20with%20scout%20logo%20stainless%20steel%20on%20white%20background%20product%20photography%20professional%20lighting%20outdoor%20equipment&width=400&height=500&seq=merc3&orientation=portrait',
+        image: '/images/merchan3.png',
         description: 'Mantiene la temperatura 12h',
         badge: 'Nuevo',
         category: 'merchandising'
@@ -124,7 +124,7 @@ const CategoryPage = () => {
         id: 4,
         name: 'Llavero Scout',
         price: 5.00,
-        image: 'https://readdy.ai/api/search-image?query=scout%20keychain%20with%20emblem%20metal%20and%20fabric%20on%20white%20background%20product%20photography%20professional%20lighting%20accessories&width=400&height=500&seq=merc4&orientation=portrait',
+        image: '/images/merchan4.png',
         description: 'Con el escudo del grupo',
         category: 'merchandising'
       },
@@ -132,7 +132,7 @@ const CategoryPage = () => {
         id: 5,
         name: 'Gorra Scout',
         price: 12.00,
-        image: 'https://readdy.ai/api/search-image?query=green%20scout%20cap%20baseball%20hat%20with%20embroidered%20logo%20on%20white%20background%20product%20photography%20professional%20lighting%20outdoor%20wear&width=400&height=500&seq=merc5&orientation=portrait',
+        image: '/images/merchan5.png',
         description: 'Protección solar',
         category: 'merchandising'
       },
@@ -140,7 +140,7 @@ const CategoryPage = () => {
         id: 6,
         name: 'Mochila Scout 30L',
         price: 35.00,
-        image: 'https://readdy.ai/api/search-image?query=green%20scout%20backpack%2030%20liter%20with%20logo%20on%20white%20background%20product%20photography%20professional%20lighting%20outdoor%20gear&width=400&height=500&seq=merc6&orientation=portrait',
+        image: '/images/merchan6.png',
         description: 'Ideal para excursiones',
         badge: 'Popular',
         category: 'merchandising'
@@ -149,45 +149,45 @@ const CategoryPage = () => {
     terechurro: [
       {
         id: 1,
-        name: 'Terechurro Clásico',
+        name: 'Telechurro Clásico',
         price: 6.50,
-        image: 'https://readdy.ai/api/search-image?query=traditional%20spanish%20churros%20in%20white%20paper%20cone%20with%20sugar%20coating%20on%20white%20background%20product%20photography%20professional%20lighting%20delicious%20presentation&width=400&height=500&seq=tere1&orientation=portrait',
+        image: '',
         description: 'Churros tradicionales recién hechos',
         badge: 'Popular',
         category: 'terechurro'
       },
       {
         id: 2,
-        name: 'Terechurro con Chocolate',
+        name: 'Telechurro con Chocolate',
         price: 8.00,
-        image: 'https://readdy.ai/api/search-image?query=spanish%20churros%20with%20hot%20chocolate%20dipping%20sauce%20in%20white%20cup%20on%20white%20background%20product%20photography%20professional%20lighting%20appetizing%20presentation&width=400&height=500&seq=tere2&orientation=portrait',
+        image: '',
         description: 'Con chocolate caliente para mojar',
         category: 'terechurro'
       },
       {
         id: 3,
-        name: 'Terechurro Relleno',
+        name: 'Telechurro Relleno',
         price: 7.50,
-        image: 'https://readdy.ai/api/search-image?query=filled%20churros%20with%20cream%20chocolate%20filling%20on%20white%20background%20product%20photography%20professional%20lighting%20gourmet%20presentation&width=400&height=500&seq=tere3&orientation=portrait',
+        image: '',
         description: 'Rellenos de crema o chocolate',
         badge: 'Nuevo',
         category: 'terechurro'
       },
       {
         id: 4,
-        name: 'Pack Familiar Terechurro',
+        name: 'Pack Familiar Telechurro',
         price: 15.00,
-        image: 'https://readdy.ai/api/search-image?query=family%20size%20churros%20pack%20in%20white%20box%20with%20multiple%20churros%20on%20white%20background%20product%20photography%20professional%20lighting%20generous%20portion&width=400&height=500&seq=tere4&orientation=portrait',
+        image: '',
         description: 'Para compartir en familia',
         category: 'terechurro'
       }
     ],
-    'trabajos-extra': [
+    'Sábados Temáticos': [
       {
         id: 1,
         name: 'Ayuda en Eventos',
         price: 50.00,
-        image: 'https://readdy.ai/api/search-image?query=scout%20volunteers%20helping%20at%20community%20event%20teamwork%20on%20white%20background%20illustration%20style%20professional%20clean%20design&width=400&height=500&seq=extra1&orientation=portrait',
+        image: '',
         description: 'Apoyo logístico en eventos',
         badge: 'Popular',
         category: 'trabajos-extra'
@@ -196,7 +196,7 @@ const CategoryPage = () => {
         id: 2,
         name: 'Recogida Solidaria',
         price: 0.00,
-        image: 'https://readdy.ai/api/search-image?query=scout%20volunteers%20collecting%20donations%20charity%20work%20on%20white%20background%20illustration%20style%20professional%20clean%20design&width=400&height=500&seq=extra2&orientation=portrait',
+        image: '',
         description: 'Recogida de alimentos y ropa',
         category: 'trabajos-extra'
       },
@@ -204,7 +204,7 @@ const CategoryPage = () => {
         id: 3,
         name: 'Limpieza de Espacios',
         price: 40.00,
-        image: 'https://readdy.ai/api/search-image?query=scout%20volunteers%20cleaning%20park%20environmental%20work%20on%20white%20background%20illustration%20style%20professional%20clean%20design&width=400&height=500&seq=extra3&orientation=portrait',
+        image: '',
         description: 'Limpieza de parques y espacios públicos',
         category: 'trabajos-extra'
       },
@@ -212,7 +212,7 @@ const CategoryPage = () => {
         id: 4,
         name: 'Talleres Educativos',
         price: 60.00,
-        image: 'https://readdy.ai/api/search-image?query=scout%20leaders%20teaching%20workshop%20educational%20activity%20on%20white%20background%20illustration%20style%20professional%20clean%20design&width=400&height=500&seq=extra4&orientation=portrait',
+        image: '',
         description: 'Talleres para niños y jóvenes',
         badge: 'Nuevo',
         category: 'trabajos-extra'
@@ -221,23 +221,23 @@ const CategoryPage = () => {
   };
 
   const categoryInfo: Record<string, { title: string; description: string; icon: string }> = {
-    polvorones: {
+    Polvorones: {
       title: 'Polvorones Artesanales',
       description: 'Deliciosos polvorones elaborados con recetas tradicionales',
       icon: 'ri-cake-3-line'
     },
-    merchandising: {
+    Merchandising: {
       title: 'Merchandising Scout',
       description: 'Productos oficiales del Grupo Scout Apicula',
       icon: 'ri-shirt-line'
     },
-    terechurro: {
+    Telechurro: {
       title: 'Terechurro',
       description: 'Churros y productos especiales',
       icon: 'ri-compass-3-line'
     },
-    'trabajos-extra': {
-      title: 'Trabajos Extra',
+    'Sábados Temáticos': {
+      title: 'Sábados Temáticos',
       description: 'Servicios y actividades solidarias',
       icon: 'ri-hand-heart-line'
     }

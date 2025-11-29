@@ -492,7 +492,9 @@ const HomePage = () => {
             ))}
           </div>
         </div>
-           {/* Trust Badges */}
+      </section>
+
+      {/* Trust Badges */}
       <section className="py-16">
         <div className="max-w-7xl mx-auto px-6">
           <div className="mt-16 flex flex-wrap justify-center items-center gap-8">
@@ -521,15 +523,13 @@ const HomePage = () => {
         </div>
       </section>
 
-
-
-      {/* Newsletter Section */}
+{/* Newsletter Section */}
       <section className="py-20 bg-gradient-to-r from-green-700 via-green-600 to-green-700 text-white relative overflow-hidden">
         <div className="absolute inset-0 opacity-10">
           <div className="absolute top-0 left-0 w-96 h-96 bg-yellow-400 rounded-full blur-3xl"></div>
           <div className="absolute bottom-0 right-0 w-96 h-96 bg-yellow-400 rounded-full blur-3xl"></div>
         </div>
-        
+
         <div className="max-w-4xl mx-auto px-6 text-center relative z-10">
           <div className="w-20 h-20 bg-white/20 backdrop-blur-sm rounded-full flex items-center justify-center mx-auto mb-6">
             <i className="ri-mail-line text-4xl"></i>
@@ -537,7 +537,10 @@ const HomePage = () => {
           <h2 className="text-4xl lg:text-5xl font-bold mb-4">
             ¡No Te Pierdas Nuestras Ofertas!
           </h2>
-          
+          <p className="text-xl mb-8 opacity-90">
+            Suscríbete y recibe un 10% de descuento en tu primera compra
+          </p>
+
           {newsletterStatus === 'success' ? (
             <div className="bg-white/20 backdrop-blur-sm rounded-2xl p-6 max-w-xl mx-auto animate-slideUp">
               <i className="ri-checkbox-circle-line text-5xl mb-3"></i>
@@ -546,7 +549,7 @@ const HomePage = () => {
             </div>
           ) : (
             <form id="newsletter-form" onSubmit={handleNewsletterSubmit} data-readdy-form className="flex flex-col sm:flex-row gap-4 max-w-xl mx-auto">
-              <input 
+              <input
                 type="email"
                 name="email"
                 value={newsletterEmail}
@@ -555,7 +558,7 @@ const HomePage = () => {
                 className="flex-1 px-6 py-4 rounded-full text-gray-900 focus:outline-none focus:ring-4 focus:ring-yellow-400 text-base"
                 required
               />
-              <button 
+              <button
                 type="submit"
                 className="bg-yellow-600 hover:bg-yellow-700 text-white font-bold px-8 py-4 rounded-full transition-all duration-300 hover:scale-105 shadow-lg whitespace-nowrap cursor-pointer"
               >
@@ -563,13 +566,13 @@ const HomePage = () => {
               </button>
             </form>
           )}
-          
+
           {newsletterStatus === 'error' && (
             <p className="text-red-200 mt-4 animate-slideUp">
               Hubo un error. Por favor, inténtalo de nuevo.
             </p>
           )}
-          
+
           <p className="text-sm mt-4 opacity-75">
             <i className="ri-lock-line mr-1"></i>
             Tus datos están protegidos. No compartimos información.
@@ -604,7 +607,7 @@ const HomePage = () => {
 
       <AuthModal isOpen={isAuthModalOpen} onClose={() => setIsAuthModalOpen(false)} />
 
-  {/* Footer */}
+      {/* Footer */}
       <Footer />
     </div>
   );

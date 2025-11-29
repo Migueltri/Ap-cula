@@ -56,7 +56,7 @@ const Navbar = () => {
               <div className="w-12 h-12 flex items-center justify-center">
                 <img 
                   src="/images/pios.png"
-                  alt="Pioneros Apicula"
+                  alt="Pioneros Apícula"
                   className="w-full h-full object-contain group-hover:scale-110 transition-transform duration-300"
                 />
               </div>
@@ -64,7 +64,7 @@ const Navbar = () => {
                 <span className={`text-xl font-bold transition-colors ${
                   isScrolled ? 'text-green-900' : 'text-green-900'
                 }`}>
-                  Pioneros Apicula
+                  Pioneros Apícula
                 </span>
               </div>
             </Link>

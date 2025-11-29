@@ -14,11 +14,11 @@ const Footer = () => {
               <div className="w-12 h-12 flex items-center justify-center">
                 <img 
                   src="pios.png"
-                  alt="Grupo Scout Apicula"
+                  alt="Pioneros Apicula"
                   className="w-full h-full object-contain"
                 />
               </div>
-              <span className="text-xl font-bold">Scout Apicula</span>
+              <span className="text-xl font-bold">Pioneros Apicula</span>
             </div>
             <p className="text-green-100 leading-relaxed">
            Apoya nuestras actividades comprando en nuestra tienda oficial.

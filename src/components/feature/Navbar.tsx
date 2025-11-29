@@ -35,21 +35,20 @@ const Navbar = () => {
     }
   };
 
-  // SLUGS must exactly match keys in your allProducts object
   const categories = [
     { name: 'Polvorones', slug: 'polvorones', icon: 'ri-cake-3-line' },
     { name: 'Merchandising', slug: 'merchandising', icon: 'ri-shirt-line' },
-    { name: 'Terechurro', slug: 'terechurro', icon: 'ri-compass-3-line' },
-    { name: 'Trabajos Extra', slug: 'trabajos-extra', icon: 'ri-hand-heart-line' }
+    { name: 'Telechurro', slug: 'telechurro', icon: 'ri-compass-3-line' },
+    { name: 'Sábados Temáticos', slug: 'sábados temáticos', icon: 'ri-hand-heart-line' }
   ];
 
   return (
     <>
-      <nav className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
+      <nav className={fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
         isScrolled 
           ? 'bg-white/95 backdrop-blur-lg shadow-lg' 
           : 'bg-transparent'
-      }`}>
+      }}>
         <div className="max-w-7xl mx-auto px-6">
           <div className="flex items-center justify-between h-20">
             {/* Logo */}
@@ -62,9 +61,9 @@ const Navbar = () => {
                 />
               </div>
               <div className="hidden lg:block">
-                <span className={`text-xl font-bold transition-colors ${
+                <span className={text-xl font-bold transition-colors ${
                   isScrolled ? 'text-green-900' : 'text-green-900'
-                }`}>
+                }}>
                   Pioneros Apícula
                 </span>
               </div>
@@ -74,9 +73,9 @@ const Navbar = () => {
             <div className="hidden lg:flex items-center gap-8">
               <Link 
                 to="/" 
-                className={`font-semibold transition-all duration-300 hover:text-yellow-600 relative group cursor-pointer ${
+                className={font-semibold transition-all duration-300 hover:text-yellow-600 relative group cursor-pointer ${
                   isScrolled ? 'text-gray-700' : 'text-gray-900'
-                }`}
+                }}
               >
                 Inicio
                 <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-yellow-600 group-hover:w-full transition-all duration-300"></span>
@@ -85,10 +84,10 @@ const Navbar = () => {
               {categories.map((category) => (
                 <Link 
                   key={category.slug}
-                  to={`/categoria/${encodeURIComponent(category.slug)}`}
-                  className={`font-semibold transition-all duration-300 hover:text-yellow-600 relative group cursor-pointer ${
+                  to={/categoria/${category.slug}}
+                  className={font-semibold transition-all duration-300 hover:text-yellow-600 relative group cursor-pointer ${
                     isScrolled ? 'text-gray-700' : 'text-gray-900'
-                  }`}
+                  }}
                 >
                   {category.name}
                   <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-yellow-600 group-hover:w-full transition-all duration-300"></span>
@@ -97,9 +96,9 @@ const Navbar = () => {
 
               <Link 
                 to="/calendario" 
-                className={`font-semibold transition-all duration-300 hover:text-yellow-600 relative group cursor-pointer ${
+                className={font-semibold transition-all duration-300 hover:text-yellow-600 relative group cursor-pointer ${
                   isScrolled ? 'text-gray-700' : 'text-gray-900'
-                }`}
+                }}
               >
                 Calendario
                 <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-yellow-600 group-hover:w-full transition-all duration-300"></span>
@@ -107,9 +106,9 @@ const Navbar = () => {
 
               <Link 
                 to="/contacto" 
-                className={`font-semibold transition-all duration-300 hover:text-yellow-600 relative group cursor-pointer ${
+                className={font-semibold transition-all duration-300 hover:text-yellow-600 relative group cursor-pointer ${
                   isScrolled ? 'text-gray-700' : 'text-gray-900'
-                }`}
+                }}
               >
                 Contacto
                 <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-yellow-600 group-hover:w-full transition-all duration-300"></span>
@@ -140,9 +139,9 @@ const Navbar = () => {
                 ) : (
                   <button 
                     onClick={() => setIsSearchOpen(true)}
-                    className={`w-10 h-10 flex items-center justify-center rounded-full transition-all duration-300 hover:bg-gray-100 cursor-pointer ${
+                    className={w-10 h-10 flex items-center justify-center rounded-full transition-all duration-300 hover:bg-gray-100 cursor-pointer ${
                       isScrolled ? 'text-gray-700' : 'text-gray-900'
-                    }`}
+                    }}
                   >
                     <i className="ri-search-line text-xl"></i>
                   </button>
@@ -152,9 +151,9 @@ const Navbar = () => {
               {/* Favorites */}
               <Link 
                 to="/favoritos"
-                className={`hidden md:flex w-10 h-10 items-center justify-center rounded-full transition-all duration-300 hover:bg-gray-100 cursor-pointer relative ${
+                className={hidden md:flex w-10 h-10 items-center justify-center rounded-full transition-all duration-300 hover:bg-gray-100 cursor-pointer relative ${
                   isScrolled ? 'text-gray-700' : 'text-gray-900'
-                }`}
+                }}
               >
                 <i className="ri-heart-line text-xl"></i>
                 {favoritesCount > 0 && (
@@ -167,9 +166,9 @@ const Navbar = () => {
               {/* Cart */}
               <button 
                 onClick={() => setIsCartOpen(true)}
-                className={`relative w-10 h-10 flex items-center justify-center rounded-full transition-all duration-300 hover:bg-gray-100 cursor-pointer ${
+                className={relative w-10 h-10 flex items-center justify-center rounded-full transition-all duration-300 hover:bg-gray-100 cursor-pointer ${
                   isScrolled ? 'text-gray-700' : 'text-gray-900'
-                }`}
+                }}
               >
                 <i className="ri-shopping-cart-line text-xl"></i>
                 {cartCount > 0 && (
@@ -184,9 +183,9 @@ const Navbar = () => {
                 <div className="hidden md:block relative">
                   <button 
                     onClick={() => setShowUserMenu(!showUserMenu)}
-                    className={`w-10 h-10 flex items-center justify-center rounded-full transition-all duration-300 hover:bg-gray-100 cursor-pointer ${
+                    className={w-10 h-10 flex items-center justify-center rounded-full transition-all duration-300 hover:bg-gray-100 cursor-pointer ${
                       isScrolled ? 'text-gray-700' : 'text-gray-900'
-                    }`}
+                    }}
                   >
                     {user.user_metadata?.avatar_url ? (
                       <img 
@@ -231,9 +230,9 @@ const Navbar = () => {
               ) : (
                 <button 
                   onClick={() => setIsAuthModalOpen(true)}
-                  className={`hidden md:flex w-10 h-10 items-center justify-center rounded-full transition-all duration-300 hover:bg-gray-100 cursor-pointer ${
+                  className={hidden md:flex w-10 h-10 items-center justify-center rounded-full transition-all duration-300 hover:bg-gray-100 cursor-pointer ${
                     isScrolled ? 'text-gray-700' : 'text-gray-900'
-                  }`}
+                  }}
                 >
                   <i className="ri-user-line text-xl"></i>
                 </button>
@@ -242,11 +241,11 @@ const Navbar = () => {
               {/* Mobile Menu Toggle */}
               <button 
                 onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-                className={`lg:hidden w-10 h-10 flex items-center justify-center rounded-full transition-all duration-300 hover:bg-gray-100 cursor-pointer ${
+                className={lg:hidden w-10 h-10 flex items-center justify-center rounded-full transition-all duration-300 hover:bg-gray-100 cursor-pointer ${
                   isScrolled ? 'text-gray-700' : 'text-gray-900'
-                }`}
+                }}
               >
-                <i className={`text-2xl ${isMobileMenuOpen ? 'ri-close-line' : 'ri-menu-line'}`}></i>
+                <i className={text-2xl ${isMobileMenuOpen ? 'ri-close-line' : 'ri-menu-line'}}></i>
               </button>
             </div>
           </div>
@@ -278,11 +277,11 @@ const Navbar = () => {
               {categories.map((category) => (
                 <Link 
                   key={category.slug}
-                  to={`/categoria/${encodeURIComponent(category.slug)}`}
+                  to={/categoria/${category.slug}}
                   onClick={() => setIsMobileMenuOpen(false)}
                   className="block py-3 px-4 text-gray-700 hover:bg-gray-50 rounded-lg font-semibold transition-colors cursor-pointer"
                 >
-                  <i className={`${category.icon} mr-3`}></i>
+                  <i className={${category.icon} mr-3}></i>
                   {category.name}
                 </Link>
               ))}
